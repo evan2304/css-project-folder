@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS3 Project</title>
+  <style type="text/css">
+   body {
+       height:1000px;
+       background:url(bamboo2.png)repeat center,linear-gradient(#ffc405,#fff205,#c9f961);
+       /*picture credit: clker.com.*/
+   }
+   h1 {
+       text-align: center;
+       font-family: verdana;
+       background-color: #fff993;
+       width: 600px;
+       border: 30px solid #52aa00;
+       padding: 50px;
+       margin: auto;
+       box-shadow: 10px 10px 10px 10px #ffff7c;
+       }
+       
+    h1:hover {
+        width: 1000px;
+        transform: skewX(10deg);
+        /**/
+    }
+    
+       
+    h3 {
+       text-align: center;
+       font-family: Verdana, sans-serif;
+       background-color: #fff993;
+       width: 400px;
+       border: 30px solid #52aa00;
+       padding: 50px;
+       margin: auto;
+       position:relative;
+       box-shadow: 10px 10px 10px 10px #ffff7c;
+       animation-name:billboard;
+       animation-duration:2s;
+       animation-delay:3s;
+       animation-iteration-count:2;
+       
+    }
+    
+     /*rotation around the x axis is set to 90,180, 270 and indirectly 0 and 360 so that the animation happens proportionally*/
+    @keyframes billboard {
+    0%  {transform: none;}
+    25% {transform: rotateX(90deg);}
+    50% {transform: rotateX(180deg);}
+    75% {transform: rotateX(270deg);}
+    100% {transform: none;}
+    
+}
+
+
+   
+
+   
+  </style>
+  </head>
+  <body>
+  <h1>Looking to spruce up your garden, greenhouse or home?</h1>
+  <br> 
+  <h3>Come to <i>LE PETIT JARDIN</i> and get your fix. We sell everything from Bonsia Trees to Sunflower Seeds.</h3>
+  
+  </body>
+</html>
